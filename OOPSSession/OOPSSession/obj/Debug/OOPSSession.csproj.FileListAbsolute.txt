@@ -1,0 +1,7 @@
+D:\Personal\Session\.NET\Prasanna\OOPSSession\OOPSSession\OOPSSession\bin\Debug\OOPSSession.exe.config
+D:\Personal\Session\.NET\Prasanna\OOPSSession\OOPSSession\OOPSSession\bin\Debug\OOPSSession.exe
+D:\Personal\Session\.NET\Prasanna\OOPSSession\OOPSSession\OOPSSession\bin\Debug\OOPSSession.pdb
+D:\Personal\Session\.NET\Prasanna\OOPSSession\OOPSSession\OOPSSession\obj\Debug\OOPSSession.csprojAssemblyReference.cache
+D:\Personal\Session\.NET\Prasanna\OOPSSession\OOPSSession\OOPSSession\obj\Debug\OOPSSession.csproj.CoreCompileInputs.cache
+D:\Personal\Session\.NET\Prasanna\OOPSSession\OOPSSession\OOPSSession\obj\Debug\OOPSSession.exe
+D:\Personal\Session\.NET\Prasanna\OOPSSession\OOPSSession\OOPSSession\obj\Debug\OOPSSession.pdb
