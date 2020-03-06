@@ -9,36 +9,21 @@ namespace OOPSSession
     {
         static void Main()
         {
-            IPerson person = new Person("Prsannna", "p@gmail.com", 989898989);
-            person.Display();
-            person.Display("Implemented Display Method");
+            //IPerson person = new Person("Prsannna", "p@gmail.com", 989898989);
+            //person.Display();
+            //person.Display("Implemented Display Method");
 
-            int[] eveoddNum = new int[] { 2, 3, 4, 5, 6, 7, 8, 9 };
-            Console.WriteLine(eveoddNum[0]);
+            //Exception Handling
+            //BasicExceptions basicExceptions = new BasicExceptions();
+            //basicExceptions.Divide(10, 0);
 
-            for (int i = 0; i < eveoddNum.Length; i++)
-            {
-                if (eveoddNum[i] % 2 == 0)
-                {
-                    Console.WriteLine("Even : " + eveoddNum[i]);
-                }
-                else {
-                    Console.WriteLine("Odd : " + eveoddNum[i]);
-                }
-            }
-
-            List<string> colors = new List<string>();
-            colors.Add("Green");
-            colors.Add("Red");
-            colors.Add("White");
-
-            Console.WriteLine("----------------");
-            Console.WriteLine("List Of Colors");
-            foreach (var item in colors)
-            {
-                Console.WriteLine(item);
-            }
-
+            //Collections & Generics
+            Generics<string> generics = new Generics<string>();
+            //generics.Collection();
+            //generics.Compare("madam","madam");
+            //Generics<int> Objgenerics = new Generics<int>();
+            //Objgenerics.Compare(10, 20);
+            generics.Dictionaries();
 
             Console.ReadKey();
         }   

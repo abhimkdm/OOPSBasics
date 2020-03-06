@@ -26,7 +26,7 @@ namespace OOPSSession.OOPs
 
         public void Display(string text)
         {
-            Console.WriteLine(text);
+            throw new NotImplementedException();
         }
     }
 }
