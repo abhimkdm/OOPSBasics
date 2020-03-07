@@ -43,8 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BasicsConcepts\abstraction\Rectangle.cs" />
+    <Compile Include="BasicsConcepts\abstraction\Shape.cs" />
+    <Compile Include="BasicsConcepts\abstraction\Square.cs" />
+    <Compile Include="BasicsConcepts\BasicDelegate.cs" />
     <Compile Include="BasicsConcepts\BasicExceptions.cs" />
     <Compile Include="BasicsConcepts\BasicsConcept.cs" />
+    <Compile Include="BasicsConcepts\BasicStatic.cs" />
     <Compile Include="BasicsConcepts\Generics.cs" />
     <Compile Include="OOPs\ContactDetails.cs" />
     <Compile Include="OOPs\IPerson.cs" />
