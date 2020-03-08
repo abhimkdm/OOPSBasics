@@ -50,7 +50,9 @@
     <Compile Include="BasicsConcepts\BasicExceptions.cs" />
     <Compile Include="BasicsConcepts\BasicsConcept.cs" />
     <Compile Include="BasicsConcepts\BasicStatic.cs" />
+    <Compile Include="BasicsConcepts\Disposable.cs" />
     <Compile Include="BasicsConcepts\Generics.cs" />
+    <Compile Include="BasicsConcepts\Maths.cs" />
     <Compile Include="OOPs\ContactDetails.cs" />
     <Compile Include="OOPs\IPerson.cs" />
     <Compile Include="OOPs\Person.cs" />

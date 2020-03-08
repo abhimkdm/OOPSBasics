@@ -6,16 +6,17 @@ using OOPSSession.BasicsConcepts.abstraction;
 
 namespace OOPSSession
 {
-    class Program
+    class Program  
     {
        public delegate void Display();
        public delegate void EvenNum(int i);
+       
        public static void Main()
         {
             //==>> Abstraction
-            Shape rectangle = new Rectangle();
-            Console.WriteLine(rectangle.area(10,20));
-            rectangle.display();
+            //Shape rectangle = new Rectangle();
+            //Console.WriteLine(rectangle.area(10,20));
+            //rectangle.display();
 
             //==>Static Class
             //Console.WriteLine(BasicStatic.name);
@@ -23,9 +24,74 @@ namespace OOPSSession
             //==>> Delegates
             //DelegateMembers();
 
+            //==> Events
+            //Maths objMaths = new Maths();
+            //objMaths.Check += objMaths.Even_Click;
+            //objMaths.Check += objMaths.Odd_Click;
+            //objMaths.CheckNumbers();
+
+            //==> Memomory Management
+            //MemomoryManagement();
+            //ManageCode();
+
             Console.ReadKey();
         }
 
+        public static void ManageCode() {
+            string filePath = @"D:\Personal\Session\.NET\Readme.txt";
+            string[] lines = { "First", "Second", "Third" };
+
+            //System.IO.File.WriteAllLines(filePath, lines); //Unmanaged
+
+            //System.IO.StreamWriter streamWriter = new System.IO.StreamWriter(filePath);
+            //foreach (var item in lines)
+            //{
+            //    streamWriter.WriteLine(item);
+            //}
+
+
+            //Managed Examples
+            //using (System.IO.StreamWriter streamWriter = new System.IO.StreamWriter(filePath))
+            //{
+            //    foreach (var item in lines)
+            //    {
+            //        streamWriter.WriteLine(item);
+            //    }
+            //}
+
+            //IDisposable disposable = new Disposable();
+
+            //try
+            //{
+            //    System.IO.StreamWriter streamWriter = new System.IO.StreamWriter(filePath);
+            //    foreach (var item in lines)
+            //    {
+            //        streamWriter.WriteLine(item);
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //}
+            //finally {
+            //    disposable.Dispose();
+            //}
+        }
+
+        private static void MemomoryManagement()
+        {
+            Console.WriteLine("Current Memory " + GC.GetTotalMemory(false));
+            Maths ObjMaths01 = new Maths();
+            Maths ObjMaths02 = new Maths();
+            Maths ObjMaths03 = new Maths();
+            Console.WriteLine("Gen " + GC.GetGeneration(ObjMaths01));
+            GC.Collect();
+            Console.WriteLine("Gen " + GC.GetGeneration(ObjMaths02));
+            GC.Collect();
+            Console.WriteLine("Gen " + GC.GetGeneration(ObjMaths03));
+
+            Console.WriteLine("Current Memory " + GC.GetTotalMemory(false));
+        }
 
         public static void DelegateMembers() {
             //Practice();
@@ -36,16 +102,27 @@ namespace OOPSSession
 
             //EvenNum evenNum = new EvenNum(PrintEven);
             //Numbers(evenNum);
+            //EvenNum oddNum = new EvenNum(PrintOdd);
+            //Numbers(oddNum);
         }
 
         public static void PrintEven(int i) {
             Console.WriteLine(i);
         }
-        public static void Numbers(EvenNum evenNum) {
+
+        public static void PrintOdd(int i) {
+            Console.WriteLine(i);
+        }
+        public static void Numbers(EvenNum num) {
             for (int i = 0; i < 10; i++)
             {
-                if (i % 2 == 0) {
-                    evenNum(i);
+                if (i % 2 == 0)
+                {
+                    //num(i); //Even
+                }
+                else if (i % 2 != 0)
+                {
+                    //num(i); //Odd
                 }
             }
         }
