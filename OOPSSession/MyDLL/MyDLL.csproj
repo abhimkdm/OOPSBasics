@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EE25E366-A2F1-4FE9-9B9D-A1CA0F3A3C53}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>OOPSSession</RootNamespace>
-    <AssemblyName>OOPSSession</AssemblyName>
+    <ProjectGuid>{48FD8753-29E1-4C0D-A77A-060590A64611}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyDLL</RootNamespace>
+    <AssemblyName>MyDLL</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,34 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BasicsConcepts\abstraction\Rectangle.cs" />
-    <Compile Include="BasicsConcepts\abstraction\Shape.cs" />
-    <Compile Include="BasicsConcepts\abstraction\Square.cs" />
-    <Compile Include="BasicsConcepts\BasicDelegate.cs" />
-    <Compile Include="BasicsConcepts\BasicExceptions.cs" />
-    <Compile Include="BasicsConcepts\BasicsConcept.cs" />
-    <Compile Include="BasicsConcepts\BasicStatic.cs" />
-    <Compile Include="BasicsConcepts\Disposable.cs" />
-    <Compile Include="BasicsConcepts\Files\Deserialization.cs" />
-    <Compile Include="BasicsConcepts\Files\Person.cs" />
-    <Compile Include="BasicsConcepts\Files\Serialization.cs" />
-    <Compile Include="BasicsConcepts\Generics.cs" />
-    <Compile Include="BasicsConcepts\Maths.cs" />
-    <Compile Include="BasicsConcepts\Threading\Works.cs" />
-    <Compile Include="OOPs\ContactDetails.cs" />
-    <Compile Include="OOPs\IPerson.cs" />
-    <Compile Include="OOPs\Person.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Print.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MyDLL\MyDLL.csproj">
-      <Project>{48fd8753-29e1-4c0d-a77a-060590a64611}</Project>
-      <Name>MyDLL</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

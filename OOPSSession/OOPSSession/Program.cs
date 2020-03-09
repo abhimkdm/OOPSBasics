@@ -3,6 +3,10 @@ using OOPSSession.OOPs;
 using OOPSSession.BasicsConcepts;
 using System.Collections.Generic;
 using OOPSSession.BasicsConcepts.abstraction;
+using OOPSSession.BasicsConcepts.Files;
+using OOPSSession.BasicsConcepts.Threading;
+using MyDLL;
+using System.Threading;
 
 namespace OOPSSession
 {
@@ -19,7 +23,7 @@ namespace OOPSSession
             //rectangle.display();
 
             //==>Static Class
-            //Console.WriteLine(BasicStatic.name);
+            Console.WriteLine(BasicStatic.name);
 
             //==>> Delegates
             //DelegateMembers();
@@ -33,6 +37,19 @@ namespace OOPSSession
             //==> Memomory Management
             //MemomoryManagement();
             //ManageCode();
+
+            //==> Assembly
+            //Print print = new Print();
+
+            //==> Serialization
+
+            // Serialization serialization = new Serialization();
+            // Deserialization deserialization = new Deserialization();'
+
+            //==> Threading
+            Works works = new Works();
+            //works.Work1();
+            //works.Work2();
 
             Console.ReadKey();
         }

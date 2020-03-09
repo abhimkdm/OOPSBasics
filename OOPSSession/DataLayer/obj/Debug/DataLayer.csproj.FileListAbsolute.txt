@@ -1,0 +1,6 @@
+D:\Personal\Session\.NET\OOPSBasics\OOPSSession\DataLayer\bin\Debug\DataLayer.dll
+D:\Personal\Session\.NET\OOPSBasics\OOPSSession\DataLayer\bin\Debug\DataLayer.pdb
+D:\Personal\Session\.NET\OOPSBasics\OOPSSession\DataLayer\obj\Debug\DataLayer.csprojAssemblyReference.cache
+D:\Personal\Session\.NET\OOPSBasics\OOPSSession\DataLayer\obj\Debug\DataLayer.csproj.CoreCompileInputs.cache
+D:\Personal\Session\.NET\OOPSBasics\OOPSSession\DataLayer\obj\Debug\DataLayer.dll
+D:\Personal\Session\.NET\OOPSBasics\OOPSSession\DataLayer\obj\Debug\DataLayer.pdb
